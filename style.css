@@ -1,15 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-body{
-    background-color: #99bfb2d4;
+
+:root{
+    --cor-fundo: #99bfb2d4;
+    --cor-principal: #0B0D20 ;
+    --cor-secundaria: #212333;
+    --cor-destaque: #933061;
+    --cor-texto: #D7F9FF;
 }
 
-h1{
-    color: #933061;
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     font-family: "Roboto Slab";
 }
 
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: var(--cor-destaque);
+}
+
 .caixa-pergunta{
+    padding-bottom: 10px;
     color: #333232;
     font-family: "Roboto Slab";
     font-size: 20px;
