@@ -50,3 +50,9 @@ function respostaSelecionada(opcaoSelecionada) {
     atual++;
     mostraPergunta();
 }
+
+function mostraResultado() {
+    caixaPerguntas.textContent = "síntese final...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
